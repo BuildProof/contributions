@@ -1,3 +1,4 @@
+```mermaid 
 erDiagram
 
     %% ------------------------------------------------------
@@ -135,3 +136,5 @@ erDiagram
      USER ||--|{ SCORE : "assigns"
      SPONSOR ||--|{ HACKATHON_SPONSOR : "supports"
      HACKATHON ||--|{ HACKATHON_SPONSOR : "has sponsors"
+
+```
