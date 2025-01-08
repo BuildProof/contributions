@@ -1,0 +1,25 @@
+submission_id,team_id,hackathon_id,name,description,submission_link,submission_date,status
+4001,3001,101,Wallet Connect,A seamless wallet integration layer,https://github.com/TheChainBreakers/wallet-connect,2025-03-07 17:50:00,Final
+4002,3002,101,NFTify,An easy NFT creation library,https://github.com/NFTify/nft-creation,2025-03-07 17:55:00,Final
+4003,3003,101,DeFiNinjas,Yield aggregator with minimal fees,https://github.com/DeFiNinjas/aggregator,2025-03-07 17:58:00,Final
+4004,3004,102,MiamiDeFi,Local stablecoin for Miami ecosystem,https://github.com/MiamiDeFi/stablecoin,2025-05-16 16:50:00,Final
+4005,3005,102,StakingStars,Multi-chain staking rewards aggregator,https://github.com/StakingStars/aggr,2025-05-16 16:55:00,Final
+4006,3006,102,TropicalChains,Cross-chain swap with a tropical theme,https://github.com/TropicalChains/swap,2025-05-16 16:58:00,Final
+4007,3007,103,NFTeam,Collaboration tool for NFT artists,https://github.com/NFTeam/collab-tool,2025-06-10 17:45:00,Final
+4008,3008,103,TokenArtists,NFT marketplace for fine digital arts,https://github.com/TokenArtists/marketplace,2025-06-10 17:50:00,Final
+4009,3009,103,MintMasters,Bulk minting for large NFT collections,https://github.com/MintMasters/bulk-mint,2025-06-10 17:55:00,Final
+4010,3010,104,L2Boost,Tools for L2-based transactions,https://github.com/L2Boost/tx-optimizer,2025-07-07 17:50:00,Final
+4011,3011,104,ScaleForce,Auto-scaling solutions for L2 blockchains,https://github.com/ScaleForce/auto-scale,2025-07-07 17:55:00,Final
+4012,3012,104,ZKRockets,Zero-knowledge rollup accelerators,https://github.com/ZKRockets/rollup,2025-07-07 17:58:00,Final
+4013,3013,105,SolSecure,Security auditing suite for Solana smart contracts,https://github.com/SolSecure/auditor,2025-08-21 16:50:00,Final
+4014,3014,105,SmartAuditors,AI-based auditing for EVM-compatible chains,https://github.com/SmartAuditors/ai-audit,2025-08-21 16:55:00,Final
+4015,3015,105,CodeGuardians,Security plugin scanning known exploits,https://github.com/CodeGuardians/exploit-scanner,2025-08-21 16:58:00,Final
+4016,3016,106,DAOGlobal,One-click DAO creation platform,https://github.com/DAOGlobal/creator,2025-09-07 17:50:00,Final
+4017,3017,106,VoterChain,On-chain voting DApp,https://github.com/VoterChain/dapp,2025-09-07 17:55:00,Final
+4018,3018,106,GovernMinds,AI proposals and discussion forum for DAOs,https://github.com/GovernMinds/forum,2025-09-07 17:58:00,Final
+4019,3019,107,MetaPioneers,Metaverse builder engine,https://github.com/MetaPioneers/engine,2025-10-15 17:45:00,Final
+4020,3020,107,VRverse,VR-based NFT marketplace,https://github.com/VRverse/marketplace,2025-10-15 17:50:00,Final
+4021,3021,107,ARNova,AR galleries for NFT displays,https://github.com/ARNova/ar-gallery,2025-10-15 17:55:00,Final
+4022,3022,108,CrossConnect,Bridging tokens and messages cross-chain,https://github.com/CrossConnect/bridge,2025-11-27 17:50:00,Final
+4023,3023,108,ChainBridge,Advanced bridging with low fees,https://github.com/ChainBridge/advanced,2025-11-27 17:55:00,Final
+4024,3024,108,InterBlock,Interoperability aggregator across multiple L1s,https://github.com/InterBlock/aggregator,2025-11-27 17:58:00,Final

@@ -1,0 +1,4 @@
+criteria_id,criteria_name,description,weight
+1,Innovation,"How original or groundbreaking is the project?",0.4
+2,Technical Complexity,"Level of technical depth and difficulty?",0.3
+3,User Experience,"How user-friendly and intuitive is it?",0.3
