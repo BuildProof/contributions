@@ -195,13 +195,17 @@ def scrape_all_projects(urls: list, output_file: str, max_workers: int = 20) -> 
     # Create results directory if it doesn't exist
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     
-    # Save to CSV with explicit encoding
+    # Save to CSV with proper file handling
     try:
-        df.to_csv(output_file, 
-                  index=False,
-                  encoding='utf-8',
-                  mode='w',
-                  quoting=csv.QUOTE_ALL)  # Quote all fields to handle special characters
+        # First, try to remove the file if it exists
+        if os.path.exists(output_file):
+            os.remove(output_file)
+        
+        # Write with context manager to ensure proper file closure
+        with open(output_file, 'w', newline='', encoding='utf-8') as f:
+            df.to_csv(f, 
+                     index=False,
+                     quoting=csv.QUOTE_ALL)
         
         print(f"\nSuccessfully saved to {output_file}")
     except Exception as e:
@@ -210,10 +214,64 @@ def scrape_all_projects(urls: list, output_file: str, max_workers: int = 20) -> 
     print(f"\nTotal projects scraped: {len(all_project_details)}")
     return df
 
+def get_hackathon_events(url: str = "https://ethglobal.com/events/hackathons") -> list:
+    """
+    Scrape all past hackathon event URLs from the events page
+    
+    Args:
+        url: The events page URL
+        
+    Returns:
+        list: List of event URLs
+    """
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Find the "Past" section and get all event links
+        event_urls = []
+        past_section = soup.find(text="Past")
+        
+        if past_section:
+            # Get all links after the "Past" section
+            for link in past_section.find_all_next('a', href=True):
+                href = link['href']
+                if href.startswith('/events/'):
+                    full_url = f"https://ethglobal.com{href}"
+                    event_urls.append(full_url)
+        
+        print(f"Found {len(event_urls)} past hackathon events")
+        return event_urls
+        
+    except requests.RequestException as e:
+        print(f"Error fetching events page: {e}")
+        return []
+
 def main():
-    # Configurable file names
+    # Existing file names
     project_urls_csv = 'results/project_urls.csv'
     project_details_csv = 'results/ethglobal_project_details.csv'
+    events_csv = 'results/ethglobal_events.csv'  # New file for events
+    
+    # Create results directory if it doesn't exist
+    os.makedirs('results', exist_ok=True)
+    
+    # Clean up old files before starting
+    for file in [project_urls_csv, project_details_csv, events_csv]:
+        if os.path.exists(file):
+            try:
+                os.remove(file)
+            except Exception as e:
+                print(f"Warning: Could not remove old file {file}: {e}")
+    
+    # Step 0: Get hackathon events (new step)
+    SCRAPE_EVENTS = True  # Toggle for event scraping
+    if SCRAPE_EVENTS:
+        event_urls = get_hackathon_events()
+        events_df = pd.DataFrame(event_urls, columns=['event_url'])
+        events_df.to_csv(events_csv, index=False)
+        print(f"Saved {len(event_urls)} event URLs to {events_csv}")
     
     # Step 1: Scrape project URLs (only if needed)
     SCRAPE_URLS = False  # Toggle this when you need to scrape new URLs
