@@ -1,0 +1,382 @@
+"project_url","project_name","event_name","event_year","short_description","full_description","demo_url","source_code_url","tech_stack","prizes"
+"https://ethglobal.com/showcase/m-5jfd5","M","ETHGlobal Bangkok","2025","The project was intra-block lending (intra-block lending is lending within a block, not a FlashLoan)","We couldn't finish it sorry ! :x
+We couldn't finish it sorry ! :x
+We couldn't finish it sorry ! :x
+We couldn't finish it sorry ! :x
+We couldn't finish it sorry ! :x
+We couldn't finish it sorry ! :x
+We couldn't finish it sorry ! :x
+We couldn't finish it sorry ! :x
+We couldn't finish it sorry ! :x","N/A","https://github.com/HenriBrg/MrsEG","Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust
+Solidity | Rust","N/A"
+"https://ethglobal.com/showcase/dai-assistant-p4es2","DAI Assistant","ETHGlobal Bangkok","2025","A modern web application that provides intelligent AI agents to help users manage their digital life through secure OAuth integrations with various services like Gmail, Google Calendar, and ride-sharing platforms.","Our platform revolutionizes email management by combining the power of artificial intelligence with blockchain security. We've created a next-generation email assistant that not only helps users manage their communications more efficiently but also ensures unprecedented levels of security and authenticity through blockchain integration.","N/A","https://github.com/Jovells/dai-assistant","N/A","N/A"
+"https://ethglobal.com/showcase/prismx-xqzn8","PrismX","ETHGlobal Bangkok","2025","PrismX is a gamified prediction marketplace app built on top of Arbitrum and Avail as an L3 chain. Easy UX, you swipe right/left to bet on markets.","A seamless, Tinder-like prediction marketplace built as an L3 chain on top of Arbitrum and Avail DA. PrismX enables a clean tinder-like swipe experience to remove the web3 friction whatsover and make it more gaamified for a social betting marketplace.","https://prism.siddesh.xyz","https://github.com/Siddesh7/prism-x","We launched an Arbitrum Orbit Rollup powered by Avail DA and the result was amazing, fast confirmations. The UI UX is matched to feel like its Tinder but for making/losing money. The cool part is the AI agents working together to search web independently and coming to a consensus to settle a market instead os relying on oracles whose economic security can be a problem sometimes.","['Arbitrum-Orbit, BoLD, Timeboost', 'Avail-Best Arbitrum Orbit x Avail integrated project1st place']"
+"https://ethglobal.com/showcase/risk-analyzer-hook-s5d2i","Risk Analyzer Hook","ETHGlobal Bangkok","2025","This system represents a significant improvement in DeFi risk management, providing automated protection while maintaining market efficiency.","N/A","https://github.com/saremeskandary/RiskAnalyzerHook","https://github.com/saremeskandary/RiskAnalyzerHook","This project is a robust DeFi solution built using Solidity for smart contract logic, React for frontend interfaces, and Dynamic for seamless wallet integration. It incorporates Uniswap V4 hooks to enable custom risk analysis and liquidity management within the platform. Designed for the Ethereum ecosystem, the project leverages Uniswap V4’s modular capabilities to analyze and score liquidity pools based on volatility, market cap, and user positions. Key Features: This project represents an innovative approach to liquidity management and risk analysis in DeFi, enabling dynamic and secure user engagement within a well-integrated blockchain ecosystem.","N/A"
+"https://ethglobal.com/showcase/assisted-buy-dsazr","Assisted buy","ETHGlobal Bangkok","2025","This project combines Chronicle Oracle's reliable price feeds with Cartesi's computational capabilities to create a sophisticated price prediction system for digital assets.","This project combines Chronicle Oracle's reliable price feeds with Cartesi's computational capabilities to create a sophisticated price prediction system for digital assets. The integration enables complex computations off-chain while maintaining blockchain security and decentralization.
+Chronicle Oracle Integration Real-Time Price Feeds Direct integration with Chronicle's ETH/USD, BTC/USD, and other major pairs
+Sub-second price updates for rapid market response
+Tamper-proof price data verified by Chronicle's validator network
+Self-kissing mechanism for immediate oracle access Data Validation & Aggregation Multiple price sources for enhanced accuracy
+Outlier detection and filtering
+Volume-weighted average price (VWAP) calculations
+Historical price data storage for trend analysis Cartesi Machine Learning Pipeline Off-Chain Computation Advanced ML models running in Cartesi's Linux runtime
+Support for popular data science libraries (NumPy, Pandas, scikit-learn)
+Complex technical analysis indicators
+Neural network-based price prediction Prediction Features Multi-timeframe analysis (short-term, medium-term, long-term)
+Confidence scoring based on market conditions
+Volatility forecasting
+Risk assessment metrics Smart Contract Architecture Main Components Oracle Interface Contract Handles Chronicle Oracle data ingestion
+Price feed validation and updates
+Emergency pause mechanisms Prediction Engine Contract Interfaces with Cartesi Rollups
+Manages prediction submissions
+Handles reward distribution User Interaction Contract Stake management
+Prediction submissions
+Performance tracking","https://shramee.github.io/ethbkk24/","https://github.com/shramee/ethbkk24/","This project combines Chronicle Oracle's reliable price feeds with Cartesi's computational capabilities to create a sophisticated price prediction system for digital assets. The integration enables complex computations off-chain while maintaining blockchain security and decentralization.
+Chronicle Oracle Integration Real-Time Price Feeds Direct integration with Chronicle's ETH/USD, BTC/USD, and other major pairs
+Sub-second price updates for rapid market response
+Tamper-proof price data verified by Chronicle's validator network
+Self-kissing mechanism for immediate oracle access Data Validation & Aggregation Multiple price sources for enhanced accuracy
+Outlier detection and filtering
+Volume-weighted average price (VWAP) calculations
+Historical price data storage for trend analysis Cartesi Machine Learning Pipeline Off-Chain Computation Advanced ML models running in Cartesi's Linux runtime
+Support for popular data science libraries (NumPy, Pandas, scikit-learn)
+Complex technical analysis indicators
+Neural network-based price prediction Prediction Features Multi-timeframe analysis (short-term, medium-term, long-term)
+Confidence scoring based on market conditions
+Volatility forecasting
+Risk assessment metrics Smart Contract Architecture Main Components Oracle Interface Contract Handles Chronicle Oracle data ingestion
+Price feed validation and updates
+Emergency pause mechanisms Prediction Engine Contract Interfaces with Cartesi Rollups
+Manages prediction submissions
+Handles reward distribution User Interaction Contract Stake management
+Prediction submissions
+Performance tracking","['Chronicle Protocol-Chronicle Pool Prize']"
+"https://ethglobal.com/showcase/credit-market-sn5j5","Credit Market","ETHGlobal Bangkok","2025","A protocol where users borrow tokens by locking Uniswap LP tokens as collateral.","A decentralized protocol where users can borrow tokens by locking Uniswap LP tokens as collateral, leveraging blockchain technology for secure and transparent credit transactions.","N/A","https://github.com/Amtaf/On-Chain-credit","The On-Chain Credit Market protocol is built using Solidity, the programming language for Ethereum smart contracts. Here's a breakdown of its key components:","N/A"
+"https://ethglobal.com/showcase/assetwand-sfwf1","AssetWand","ETHGlobal Bangkok","2025","AssetWand is a AI chatbot that can search and purchase RWA Assets","This is going to be a business tool that can create businesses, purchase/rent real world assets, make business plans, or deploy autonomous AI agents that make business plans and waits for the right opportunity.
+The future of AI and Humans is to abstract out lot of real world complexity and make decisions easier that it could be possible to just think it and make it come true, just like a magic wand","N/A","https://github.com/metalturtle/nft-ui","A chainlist oracle queries data from google maps.
+The queried data is minted into RWAs and deployed to.a marketplace contract.
+An event listener captures the NFT metadata information, and uploads it to a vector database
+The user interfaces with an AI chatbot
+The user can first search their requirements, like ""Show me available farmland in north of Bangkok""
+The AI searches the vector database for any matches, and returns the list of matches
+The user demands to purchase the assets by mentioning their IDs
+The AI transfers the assets to the user","N/A"
+"https://ethglobal.com/showcase/prophesy-49bk6","Prophesy","ETHGlobal Bangkok","2025","Prophesy is an imagine-to-earn platform built for allowing anyone to create random stories, initiated by an AI and it also allows users to tip each other in the chat group if they like the 'Twist' added by the sender.","Prophesy is an XMTP based chatbot which can be added to groups in order to play a fun game to complete a store. Users get to earn for imagining great stories based on the prompts given by AI.
+I used GROQ LLama for this, along with Circle SDK in order to allow direct creation of a smart account on circle to enable users to tip each other with USDC across various chains.
+To prevent any illicit activities such as finding loopholes, the users who are flagged by the circle compliance engine are monitored.","N/A","https://github.com/parthg1901/prophesy","MTP - For creating the chatbot
+- Used GROQ API and Llama Engine for Chatbot interactions
+Circle - Used for creating Dev Controlled Wallets across various chains to allow users to tip/earn on any chain.
+- Compliance Engine - Ensures that users do not participate in any illicite activities and prevent them for misusing the application by Denying Suspicious Transactions or even Freezing their wallets in severe case.
+- Dev Controlled Wallets - Created direclty using the wallet provided by converse.xyz.
+Please feel free to play aroundrouter- Detailed API Reference coming soon.
+Chronicle Protocol - Used to provide price updates along with the time of last update to the users. (Subscription based/Custom Calls)","['Chronicle Protocol-Chronicle Pool Prize']"
+"https://ethglobal.com/showcase/priv8-r4om1","Priv8","ETHGlobal Bangkok","2025","Decentralized private social network - create communities, content, all private and resistant to censorship.","Its a decentralized private version of Reddit where one can create communities, post and upvote. Its using programmable encryption by Lit to tokengate the experience - based on users karma ERC20 tokens they can see community contents or not.
+The idea is that not Farcaster or Lens are private, but we need something that is. Hopefully I can make it more extensible so its possible to plug either one into the system to gain private communities.","N/A","https://github.com/sgraphics/priv8","Lit protocol for encryption and decryption, Web3Auth for AA and authentication, Akave for storage and Scroll for deploying the smart contracts. The front end is built with .net Blazor PWA-capable framework and deployed using .net Aspire.
+I guess it would also benefit from some kind of notification system like Push in the future.","N/A"
+"https://ethglobal.com/showcase/ape-id-1frdc","Ape ID","ETHGlobal Bangkok","2025","Ape ID serves as your on-chain identity, utilizing NFC and blockchain technology.","Ape ID is an innovative project designed to establish a secure on-chain identity using NFC and blockchain technology. By integrating components from Burner cold wallet, ENS, Nouns, and Blockscout, it aims to provide users with a decentralized identity solution. Users can manage their identities with enhanced privacy and security, aligning with the growing demand for user-controlled digital identities in a decentralized ecosystem.","N/A","https://github.com/iceywil/ethgl/","The development of Ape ID was a collaborative effort that leveraged various cutting-edge technologies to create a robust on-chain identity solution. Our goal was to seamlessly integrate NFC capabilities with blockchain technology, allowing users to manage their digital identities securely and efficiently.
+Users can connect their Ape ID to Discord, allowing for seamless identity verification within communities. This integration enables users to authenticate their presence in servers and access exclusive features based on their verified identity.","['Blockscout-Blockscout Explorer Big Pool Prize']"
+"https://ethglobal.com/showcase/poyo-49g70","PoYo","ETHGlobal Bangkok","2025","Your AI-powered financial companion in a wearable locket. It listens to your conversations, analyzes market sentiment, and delivers personalized portfolio insights with real-time market data and AI research.","Always-On Conversation Analysis Passive listening for financial terms and market discussions
+Natural language processing for context understanding
+Sentiment analysis of financial opinions and reactions
+Privacy-first processing with local speech-to-text Real-Time Market Intelligence Continuous cryptocurrency market monitoring
+Traditional market integration (stocks, commodities, forex)
+News and social media sentiment tracking
+Technical analysis pattern recognition Personalized Portfolio Management Custom portfolio tracking and rebalancing suggestions
+Risk tolerance assessment from conversation patterns
+Investment opportunity alerts based on personal interests
+Automated daily portfolio summaries AI-Powered Research Deep market analysis using Large Language Models
+Pattern matching across market data and user behavior
+Predictive analytics for market trends
+Personalized investment thesis generation","https://poyo-six.vercel.app/","https://github.com/0xjba/PoYo","Smart locket with microphone array and e-ink display
+Edge processing unit for local speech analysis
+Bluetooth connectivity for secure data transmission
+Long-life battery with wireless charging Software Stack
+[Voice Capture] → [Local Processing] → [Cloud Analysis] → [Insights]
+↓                   ↓                    ↓              ↓
+[Privacy Filter]  [Context Analysis]    [Market Data]  [Portfolio Tips] Key Technologies Voice Processing: Local speech-to-text with financial term recognition
+Market Analysis: Real-time data integration with CoinMarketCap and traditional markets
+AI Research: Claude-powered market analysis and portfolio recommendations
+Security: End-to-end encryption and local data processing // Get market insights
+const marketInsights = await getMarketData(context.tokens); // Generate AI analysis
+const analysis = await generateAIInsights(context, marketInsights); // Return personalized recommendations
+return formatUserRecommendations(analysis);
+}","N/A"
+"https://ethglobal.com/showcase/w3up-python-kg1pd","w3up python","ETHGlobal Bangkok","2025","Python client for w3up / storacha, allowing users to interact with storacha via python.","Python client for w3up / storacha, allowing users to interact with storacha via python. This should allow for more users to easily integrate storacha into their application and thus make storacha more widely used. The client is mainly made by looking at the current available clients in other languages.","https://github.com/cwkang1998/w3up-python","https://github.com/cwkang1998/w3up-python","The client is mainly made by looking at code from the javascript & golang client and then converting them into the python client. As there are a lot of libraries lacking in python for ipfs and uncanto those libraries were required to be ported into python as well. I would say that the main challenge attempting to do this is to make sure that the there will be feature parity for the client with the other clients.","N/A"
+"https://ethglobal.com/showcase/librenews-pdsxu","LibreNews","ETHGlobal Bangkok","2025","Libre News is a censorship-resistant news feed designed to ensure that news remains unalterable, unrestricted, and transparently accessible. Also it provides a mobile application which is a perfect way to present censorship-resistant news feed.","Access to information in our time is one of the cornerstones of freedom. However, censorship and restrictions by centralized authorities threaten this fundamental right. News is published, but often taken down later due to bans or restrictions, cutting people off from vital information.
+That’s exactly the problem Libre News aims to solve! 🗞️
+Libre News is a censorship-proof mobile news streaming app designed to ensure that once shared, news remains unalterable and permanently accessible.. Our system breaks the chains of censorship and ensures that information stays free. How does it work?
+Fetching News with RSS Feeds: We pull data from news websites in real time, keeping the original content intact.
+Verification with Digital Signatures: Each news item is verified with digital signatures to prove its authenticity. These signatures are turned into attestations and stored immutably on the Polygon, ensuring no one can alter or delete the information.
+Decentralized Storage: Using Filecoin, we securely store all news data on decentralized networks, making sure it remains safe and accessible even during censorship.
+Why Libre News?
+Libre News is more than just a news feed—it’s a defender of freedom. Here’s why it matters:
+Immutability: Every news item is protected with a cryptographic timestamp, ensuring it can never be tampered with.
+Access Freedom: Even if the internet is blocked, the news remains accessible through our system.
+Transparency and Trust: Our platform guarantees the authenticity of information, building trust in the content you see.
+We stand for people’s right to access information and challenge centralized censorship systems.
+Our mission is not only to preserve news but also to redefine how information is shared. Libre News is leading the fight for a censorship-free world.","N/A","https://github.com/itublockchain/ethbangkok-team2","The process begins with collecting news in real time using RSS feeds from trusted sources. These feeds allow the system to fetch the latest content directly from news websites, preserving it exactly as it was published. This ensures that no external interference or manipulation can affect the content before it enters our system.
+Once the news is collected, it undergoes a verification process using digital signatures with Sign Protocol. Each article is hashed to generate a unique digital fingerprint and then signed with a cryptographic key. This signature acts as proof of the content’s authenticity and integrity, making it impossible to alter the news without detection. The verified news is then transformed into an attestation—a cryptographic record that includes the timestamp and verification details—and stored immutably on the Polygon. This integration ensures that the news cannot be manipulated or removed, creating a permanent and transparent record.
+To further protect against censorship, all news data is stored on Filecoin, a decentralized storage network. Even if certain parts of the network are blocked or taken down, the news remains accessible from other nodes.
+Finally, users can access the news through a mobile application built with React Native, offering a user-friendly experience. The app interacts directly with Filecoin’s decentralized storage to retrieve news, ensuring seamless access even in cases of internet censorship.
+This integrated system ensures that Libre News not only shares information but safeguards its freedom, authenticity, and accessibility, making it a reliable solution against censorship and manipulation.","['Avail-Pool Prize: Build anything with Avail']"
+"https://ethglobal.com/showcase/neondotfun-idkeh","NeonDotFun","ETHGlobal Bangkok","2025","We an easy way to to connect fromn an evm to pump dot fun ge memecoinst","We ara enabiling users to get some memcoins from envm wallets to solana in n easy way we are helping interact with the emvm instead of solana much much easier, get emmecoins in a easy way from your evem wallet, no brdge or anything to do more it is supe rsuper easy, only focus on search for the memecoin","N/A","https://github.com/tony1908/neodotfun","We ara enabiling users to get some memcoins from envm wallets to solana in n easy way we are helping interact with the emvm instead of solana much much easier, it is all made with neon evm tech, use the call contract from neon evm to interact with pump dot fun directly no bridge or anything else","['Neon EVM-Neon EVM-Optimized Protocols and Apps2nd place']"
+"https://ethglobal.com/showcase/builderbets-8jwx2","builderbets","ETHGlobal Bangkok","2025","Make small bets on web3 hackathon projects to support them and unlock part of a future token airdrop","On this platform you can discover and fund your favorite web3 hackathon projects to incentivize them to keep building after the event. You select how much you want to fund the project with, connect your wallet, and fund it. Then if the project reaches their fundraising goal by the end date, they get funded and you get a locked token proportional to what you funded; otherwise, you get a refund. You can make a bunch of little bets and create a portfolio of tokens from these hackathon projects, which could end up taking off in the future.","N/A","https://github.com/yasmeen/builderbets","React, Typescript for the website and smart contracts for the transactions. Connect wallet and transact in metamask. 🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱🌱","N/A"
+"https://ethglobal.com/showcase/nexuspay-02fch","NexusPay","ETHGlobal Bangkok","2025","Nexus Pay enables instant cross-chain USDC payments between Ethereum & Layer 2s using Circle's CCTP (Cross-Chain Transfer Protocol). It allows merchants to accept payments on high-speed, low-cost L2 networks while receiving funds on their preferred chain","Nexus Pay: Revolutionizing Cross-Chain Payments with NFC Wallet Technology Overview:
+Nexus Pay is a cutting-edge payment infrastructure that combines physical NFC wallet technology with cross-chain transfer capabilities to create a seamless, debit card-like experience for crypto payments. By integrating Arx Research's Halo chip (a secure NFC-enabled hardware wallet) with Circle's Cross-Chain Transfer Protocol (CCTP), we enable instant, secure USDC payments across multiple blockchain networks. Technical Architecture: Physical Layer - Halo Chip Integration:
+• Secure NFC hardware wallet provided by Arx Research
+• Standalone wallet functionality without requiring a smartphone
+• Tamper-proof private key storage
+• Tap-to-pay experience similar to traditional payment cards Network Infrastructure:
+• Primary Networks: Payment Flow:
+a. Customer Experience:
+• Tap Halo chip at merchant terminal
+• Payment automatically processed on optimal L2 network
+• Real-time confirmation via Push Protocol notifications
+• No gas fees for end users on supported L2s b. Merchant Side:
+• Receives USDC on their preferred network
+• Instant payment confirmation
+• Automated cross-chain settlement
+• Real-time transaction monitoring Smart Contract Architecture:
+• TokenMessenger Contracts: Notification System:
+• Push Protocol integration for: Key Technical Features: Security:
+• Hardware-level security via Halo chip
+• Cryptographic signing of transactions
+• Secure key storage and management
+• Multi-layer authentication Cross-Chain Operations:
+• Seamless USDC transfers between chains
+• Optimized gas costs using L2 networks
+• Automated chain selection based on: Merchant Integration:
+• Simple API for business integration
+• Customizable payment flows
+• Detailed transaction reporting
+• Multi-chain treasury management Real-time Processing:
+• Instant payment confirmations
+• Automated cross-chain settlements
+• Push notifications for all parties
+• Transaction status tracking Benefits: For Users:
+• Familiar tap-to-pay experience
+• No need for mobile apps or hot wallets
+• Reduced transaction costs
+• Instant payment confirmation For Merchants:
+• Accept payments from any supported chain
+• Receive funds on preferred network
+• Lower processing fees
+• Real-time settlement
+• Simplified accounting For the Ecosystem:
+• Increased USDC utility
+• Better L2 adoption
+• Improved payment UX
+• Bridge between traditional and crypto payments Technical Implementation: Security Considerations: Future Roadmap:","N/A","https://github.com/Nexus-Tap/wallet","Nexus Pay: Revolutionizing Cross-Chain Payments with NFC Wallet Technology Overview:
+Nexus Pay is a cutting-edge payment infrastructure that combines physical NFC wallet technology with cross-chain transfer capabilities to create a seamless, debit card-like experience for crypto payments. By integrating Arx Research's Halo chip (a secure NFC-enabled hardware wallet) with Circle's Cross-Chain Transfer Protocol (CCTP), we enable instant, secure USDC payments across multiple blockchain networks. Technical Architecture: Physical Layer - Halo Chip Integration:
+• Secure NFC hardware wallet provided by Arx Research
+• Standalone wallet functionality without requiring a smartphone
+• Tamper-proof private key storage
+• Tap-to-pay experience similar to traditional payment cards Network Infrastructure:
+• Primary Networks: Payment Flow:
+a. Customer Experience:
+• Tap Halo chip at merchant terminal
+• Payment automatically processed on optimal L2 network
+• Real-time confirmation via Push Protocol notifications
+• No gas fees for end users on supported L2s b. Merchant Side:
+• Receives USDC on their preferred network
+• Instant payment confirmation
+• Automated cross-chain settlement
+• Real-time transaction monitoring Smart Contract Architecture:
+• TokenMessenger Contracts: Notification System:
+• Push Protocol integration for: Key Technical Features: Security:
+• Hardware-level security via Halo chip
+• Cryptographic signing of transactions
+• Secure key storage and management
+• Multi-layer authentication Cross-Chain Operations:
+• Seamless USDC transfers between chains
+• Optimized gas costs using L2 networks
+• Automated chain selection based on: Merchant Integration:
+• Simple API for business integration
+• Customizable payment flows
+• Detailed transaction reporting
+• Multi-chain treasury management Real-time Processing:
+• Instant payment confirmations
+• Automated cross-chain settlements
+• Push notifications for all parties
+• Transaction status tracking Benefits: For Users:
+• Familiar tap-to-pay experience
+• No need for mobile apps or hot wallets
+• Reduced transaction costs
+• Instant payment confirmation For Merchants:
+• Accept payments from any supported chain
+• Receive funds on preferred network
+• Lower processing fees
+• Real-time settlement
+• Simplified accounting For the Ecosystem:
+• Increased USDC utility
+• Better L2 adoption
+• Improved payment UX
+• Bridge between traditional and crypto payments Technical Implementation: Security Considerations: Future Roadmap:","['Arx Research-Build a Digi-Physical Experience2nd place']"
+"https://ethglobal.com/showcase/joinf-8tecg","JoinF","ETHGlobal Bangkok","2025","that merges the usability of traditional social networks with the transparency and economic opportunities of blockchain technology.","JoinF introduces a next-generation social finance platform that merges the usability of traditional social networks with the transparency and economic opportunities of blockchain technology. By combining the familiar features of Web2 with the innovations of Web3, JoinF empowers digital communities to generate revenue through engagement and content creation.","https://joinf.vercel.app","https://github.com/yigitcangokmen/joinf/","Smart Contracts
+This repo contains two contracts: MembershipNFT: An ERC721 NFT contract supporting royalties via ERC2981. Users can mint tokens up to a set limit, and creators manage royalties and earnings.
+Joinf: A contract that lets users become content creators by launching MembershipNFT collections. Provides user profile management and content post creation for creators. Key Features
+MembershipNFT: Minting, royalty configuration, earnings withdrawal.
+Joinf: Profile management, creator onboarding, content posting.
+Emits events for key actions like profile updates, NFT launches, and posts. Tech Stack
+Frontend: Built with Next.js and Moralis for Web3 integration.","N/A"
+"https://ethglobal.com/showcase/pomodoro-slasher-ed0y3","pomodoro slasher","ETHGlobal Bangkok","2025","Changing the way we get to focus. be at risk not able to sell at ATH, and having everything locked.","Stake your tokens and commit to completing your tasks within Pomodoro sessions.
+Complete all tasks? Get your stake back. Fail? Your tokens get locked until Christmas! 🎄
+There is nothing better than being at risk of locking tokens during a bull run, or just take your fiat away from paying rent next month.","N/A","https://github.com/CreedsCode/pomodoro-slasher","I used Next.js, Privy for social login, and Biconomy as an AA infra.
+I had an amazing time delving again into building apps one step closer to consumers.
+Using fiat onramping privy but did not work so I added a second fiat onramping, the demo shows completely no metamask in favor of reaching my target audience with my dapps, my mom.","N/A"
+"https://ethglobal.com/showcase/ladera-es6tt","Ladera","ETHGlobal Bangkok","2025","BitLayer Stack CLI automates Web3 development by creating a Next.js app with TypeScript and TailwindCSS, plus Web3 essentials (Reown, wagmi, viem) for blockchain interactions. It includes Foundry for smart contract testing and deployment, all pre-configured for Hedera Testnet.","Project Overview
+BitLayer Stack CLI is a powerful developer toolchain that streamlines the process of building full-stack Web3 applications on the Hedera ecosystem. By combining best-in-class frameworks and tools, it provides a production-ready development environment that emphasizes type safety, performance, and developer experience.
+Core Features One-command initialization of a complete full-stack dApp infrastructure
+Pre-configured project structure following industry best practices
+Automated dependency management and environment setup
+Built-in TypeScript configuration for maximum type safety Next.js 14+: Leveraging the latest features including: App Router for optimal client-side navigation
+Server Components for improved performance
+Built-in API routes for backend functionality
+Automatic code splitting and optimization TailwindCSS Integration: Custom theme configuration
+Responsive design utilities
+Dark mode support out of the box
+Component-friendly utility classes Web3 Integration Layer: Reown for seamless wallet connection
+Wagmi hooks for blockchain interactions
+Viem for low-level ethereum operations
+Type-safe smart contract interactions Foundry Integration: Professional-grade testing framework
+Gas optimization tools
+Flexible deployment scripts
+Advanced debugging capabilities Pre-configured Hedera Testnet settings
+Built-in network switching capabilities
+Gas estimation tools
+Environment variable templates Technical Architecture
+Project Structure
+Copymy-dapp/
+├── frontend/
+│   ├── components/
+│   ├── hooks/
+│   ├── pages/
+│   └── web3/
+├── contracts/
+│   ├── src/
+│   ├── test/
+│   └── script/
+└── config/
+Key Integrations Smart Contract Development: Foundry for testing and deployment
+Solidity v0.8.x support
+Custom deployment scripts for Hedera
+Automated ABI generation Frontend Development: Type-safe contract interactions
+Responsive UI components
+Web3 modal integration
+State management solutions Development Tools: Hot reloading
+TypeScript error checking
+Linting and formatting
+Testing utilities Use Cases Quick setup for DEX platforms
+Yield farming applications
+Lending/borrowing platforms
+Token swap interfaces NFT marketplace development
+NFT minting interfaces
+Collection management tools
+Gallery applications Governance interfaces
+Proposal systems
+Voting mechanisms
+Treasury management Getting Started
+bashCopy# Install the CLI globally
+npm install -g bitlayer-stack-cli bitlayer-stack-cli create my-dapp cd my-dapp yarn install yarn dev
+Development Workflow Smart Contract Development:
+bashCopy# Run tests
+forge test forge script Deploy --rpc-url hedera_testnet Frontend Development:
+bashCopy# Start Next.js development server
+yarn dev yarn build Benefits Developer Experience: Reduced setup time from hours to minutes
+Consistent project structure
+Built-in best practices
+Comprehensive documentation Performance: Optimized build configuration
+Efficient smart contract deployment
+Minimal bundle sizes
+Fast development environment Scalability: Production-ready architecture
+Easy deployment configurations
+Modular component structure
+Extensible plugin system Future Roadmap Short-term: Additional template options
+Custom plugin system
+Enhanced testing utilities
+More deployment options Long-term: Multi-chain support
+Advanced monitoring tools
+CI/CD integration
+Enterprise features This tool significantly reduces the friction in Web3 development by providing a complete, production-ready development environment that works seamlessly with the Hedera ecosystem. Whether you're building a simple dApp or a complex DeFi platform, BitLayer Stack CLI provides the foundation you need to focus on building your application rather than setting up infrastructure.","https://www.npmjs.com/package/create-hederaevm-app","https://github.com/AllenAJ/create-hedera-app","BitLayer Stack CLI is built using Node.js and TypeScript, leveraging key packages like Commander.js for CLI interaction and Inquirer.js for interactive prompts. At its core, the tool executes a series of automated steps when you run the create command. It first initializes a new Next.js project using the create-next-app command, configuring it with TypeScript and TailwindCSS by default. Then, it sets up a Foundry environment in a contracts directory for smart contract development, installing necessary dependencies like OpenZeppelin. The tool automatically injects Web3 dependencies (Reown, wagmi, and viem) into the Next.js project's package.json and copies pre-configured template files that include ready-to-use React components for wallet connection and network switching. For Hedera integration, it adds custom configuration files and environment variables preconfigured for the Hedera Testnet. The entire process is orchestrated through a modular system of utility functions that handle file operations, dependency management, and error handling. The tool maintains a template directory structure that includes boilerplate code, components, and configurations, which are copied and customized based on user input during project creation. Each step is executed sequentially with proper error handling and user feedback through a progress spinner, making the entire process seamless and user-friendly. The result is a fully configured development environment where developers can immediately start building dApps on Hedera without dealing with complex setup procedures.","N/A"
+"https://ethglobal.com/showcase/degents-7ec7r","Degents","ETHGlobal Bangkok","2025","AI Agents for Degens utilzing CDP AgentKit, FastAPi, NextJS","This project utilizes AgentKit to create degen Agents that combine trending tokens to create a new meme coin generated by the agent and created on Wow.xyz The pending portion of the project would be to multiply the agents to buy/sell the created meme coins and other tokens created on wow.xyz that match the trending tokens my application is discovering.","N/A","https://github.com/0xDanomite/degents","the project is built with a nextjs frontend and python fastapi for creating various endpoints to interact with.  For onchain activity the app utilizes coinbase AgentKit to grant access to let the AI Agent run wild. I thought it would be a creative way to test out the AgentKit, some hiccups along the way with integrating Twitter API for trends (for now hardcoded) but the Agent Kit itself was very interesting and has great potential for developers","['Coinbase Developer Platform-CDP SDK Pool Prize']"
+"https://ethglobal.com/showcase/developer-feedback-m0y22","Developer Feedback","ETHGlobal Bangkok","2025","Developer feedback on the Avail & Arbitrum Orbit integration docs","Here is my developer feedback on the Avail & Arbitrum Orbit integration docs. Highlighted navigation challenges, missing prerequisites, and areas for clarity to help improve the developer experience. Planned to build a Rollup chain with Arbitrum Orbit & Avail DA at a hackathon. Despite deploying contracts successfully, I hit blockers with Docker configs. Saving this idea for next time & sharing feedback with Avail to improve the process.","https://github.com/KatyaRyazantseva/EthGlobal-Bangkok/tree/main/developer-feedback","https://github.com/KatyaRyazantseva/EthGlobal-Bangkok","The project aimed to integrate Avail, a modular data availability layer, with Arbitrum Orbit, a framework for custom Layer 3 Rollup chains on Ethereum. I navigated through Docker, Foundry, and SubWallet to set up the environment, deployed Rollup contracts, and tested configurations. Focused on improving the docs for a smoother developer experience.","['Avail-Developer Feedback (Test our Docs)1st place']"
+"https://ethglobal.com/showcase/climate-finance-7rd6a","Climate Finance","ETHGlobal Bangkok","2025","NFT Credit Marketplace revolutionizes DeFi lending by tokenizing credit scores as NFTs. Users can build credit history on-chain, secure better loan terms, and trade their credit reputation - bridging traditional finance with Web3 innovation.","Our NFT Credit Marketplace is a groundbreaking DeFi platform that transforms how credit scoring works in the blockchain space. Here's what makes it unique: Credit Score NFTs Users' creditworthiness is represented as dynamic NFTs
+Credit scores evolve based on on-chain activities and loan repayment history
+Each NFT contains verifiable credit data and reputation metrics Lending Features Peer-to-peer lending with credit score-based interest rates
+Smart contracts automatically adjust loan terms based on credit NFT data
+Collateralized and under-collateralized loan options Credit Building Mechanisms Users earn credit score points through consistent loan repayments
+Integration with real-world financial data (optional)
+Gamified credit-building challenges and rewards Marketplace Functionality Trade credit score NFTs
+Secondary market for loan positions
+Credit score staking and yield farming opportunities Risk Management Multi-layered security protocols
+Insurance pools for lender protection
+Automated risk assessment algorithms","N/A","https://github.com/bilgin-kocak/green-finance","Technical Stack: Smart Contracts: Solidity for core contract development
+OpenZeppelin for NFT (ERC-721) implementation
+Chainlink oracles for external data feeds
+Hardhat for development and testing Frontend: React.js with TypeScript
+Web3.js for blockchain interactions
+TailwindCSS for styling
+Ethers.js for wallet integration Backend: Node.js Express server
+MongoDB for off-chain data storage
+AWS for cloud hosting
+IPFS for decentralized storage Key Technical Features: Dynamic NFT Implementation","N/A"
+"https://ethglobal.com/showcase/reporewards-vxcht","Reporewards","ETHGlobal Bangkok","2025","An on-chain system that tracks GitHub pull requests and distributes rewards based on contribution impact. Empowering developers with fair and transparent incentives for open-source work, while boosting community collaboration","Repo Rewards is a decentralized, blockchain-based system designed to incentivize and reward developers for contributing to open-source projects. The platform ensures fair and transparent distribution of rewards, providing a seamless experience for developers who contribute valuable work to the open-source ecosystem.","N/A","https://github.com/avinashnayak27/ethbangkok","echnology Stack
+Privy: Used for embedded wallet integration and user authentication via GitHub OAuth. This ensures secure access while providing a smooth user experience.
+Reclaim zkFetch: Ensures the authenticity of data related to pull requests using zkProofs. This cryptographic approach makes the data verification process reliable and secure.
+SignProtocol Hooks: Automate the process of rewarding onboarding users with Layer 2 ENS names, streamlining the onboarding process and adding value for new developers.
+The Graph: A powerful indexing and querying tool that allows the platform to fetch and process on-chain data quickly and efficiently.","['Blockscout-Blockscout Explorer Big Pool Prize']"
+"https://ethglobal.com/showcase/zkcord-czik5","zkcord","ETHGlobal Bangkok","2025","A zero-knowledge NFT ownership verifier for Discord that allows users to prove they own NFTs without revealing their wallet address. Uses Merkle trees to track ownership and smart contracts to verify proofs, enabling private but verifiable NFT-gated Discord access.","Zkcord is a zero-knowledge NFT ownership verification system for Discord that allows users to privately prove they own NFTs without exposing their wallet addresses. The system uses Merkle trees to efficiently track NFT ownership records while maintaining privacy.
+The smart contract implementation leverages O1js to handle proof generation and verification. When users want to access NFT-gated Discord channels, they generate a zero-knowledge proof of their NFT ownership which the Discord bot verifies against the on-chain Merkle root.","https://drive.google.com/file/d/1x73XeXutgheHg4_Ho9qfKg3LbEmds7ly/view?usp=sharing","https://github.com/ankit875/zkverifycord","Zkcord is a zero-knowledge NFT ownership verification system built on Protokit and O1js. The system enables Discord users to privately prove NFT ownership without exposing their wallet addresses, combining the scalability of Protokit's app-chain architecture with O1js's ZK-proof capabilities.
+The smart contract implementation handles ownership verification through Merkle trees and zero-knowledge proofs. The Next.js frontend provides a seamless interface for users to connect wallets, generate proofs, and manage Discord role verification.
+Key features: Private NFT ownership verification using ZK-proofs
+Protokit app-chain for scalable state management
+O1js smart contracts for proof generation/verification
+Next.js frontend with wallet integration
+Discord bot for automated role management
+Real-time ownership updates and role synchronization","N/A"
+"https://ethglobal.com/showcase/zubernetes-zk8s-vvchq","Zubernetes | ZK8S","ETHGlobal Bangkok","2025","The first TEE ZK container orchestrator for SP1-based verifiable execution trace with state attestation","A distributed system for orchestrating secure containerized workloads with ZK-proof verification in Intel SGX enclaves (TEEs) using Gramine. Scheduler Feasibility Analysis: Worker Scoring: Optimal Selection: Manager Worker This architecture ensures secure proof verification in SGX enclaves, protected execution traces, verifiable computation results, scalable secure container deployment, and efficient resource utilization while maintaining strong security guarantees through hardware-based isolation and attestation.","https://youtu.be/BDjioH9vYmg","https://github.com/mnm458/zubernetes-monorepo","Software Hardware:","['Blockscout-Blockscout Explorer Big Pool Prize', 'Phala Network-Best General Use Case', 'ETHGlobal-🏆 ETHGlobal Bangkok 2024 Finalist']"
+"https://ethglobal.com/showcase/credti-q8f4p","credti","ETHGlobal Bangkok","2025","Credti is a web3 platform offering uncollatorized loans based on web2 credit history. It uses ZKtls to get only the user credit worthiness","Credti is a blockchain-based lending platform designed to enable uncollateralized lending by leveraging off-chain proofs of financial credibility. It bridges Web2 and Web3 users by allowing borrowers to provide cryptographic proof of their financial status without exposing sensitive data. At the core of its innovation is ZKtls (Zero-Knowledge Transport Layer Security), which ensures secure and private interaction between off-chain financial systems (e.g., banks, payroll systems, or credit institutions) and the on-chain ecosystem.","https://youtu.be/usmcp0Kx_DI","https://github.com/eliashezron/credti","ZKtls Implementation
+ZKtls combines the Transport Layer Security (TLS) protocol with Zero-Knowledge Proofs (ZKPs). Here's how it works: TLS Layer: Establish a secure, encrypted connection between the user's device and the financial institution using traditional TLS (e.g., HTTPS).
+This ensures the user can log in and access financial data securely.","['Celo-Best responsive web app built for mobile3rd place']"
+"https://ethglobal.com/showcase/degenos-i529f","DegenOS","ETHGlobal Bangkok","2025","DegenOS is a decentralized OS built on Cartesi Rollups & Avail DA, featuring wallet/email login & six Web3 apps: token swaps, block explorer, DeFi metrics, social lookup, token risk analysis & recipe sharing. A unified platform for essential Web3 services.","DegenOS is a decentralized operating system that revolutionizes Web3 interaction by providing a unified interface for essential DeFi and social applications. Built on Cartesi Rollups with Avail as the Data Availability layer, it combines scalability with powerful off-chain computation capabilities. Users access the system through secure wallet-based or email authentication powered by Dynamic.
+The ecosystem features six core applications: degenSwap for token exchanges via CoW DAO, degenScout for multi-chain block exploration using Blockscout, degenMetric for analyzing Uniswap pools through The Graph protocol, degenSocial for ENS and social platform integration, degenShield for comprehensive token risk analysis, and degenChef for decentralized recipe sharing via Push Protocol.
+The architecture ensures verifiable computations through Cartesi's notice system and enables on-chain actions via vouchers, while the backend service manages data-intensive operations. EIP-712 signing guarantees secure data transfer between layers, creating a robust and transparent system.
+This innovative platform bridges the gap between traditional OS functionality and Web3 capabilities, offering users a seamless experience while maintaining the security and transparency of blockchain technology.","N/A","https://github.com/Suryansh-23/degenOS","DegenOS is built on Cartesi Rollups, providing a Linux-based VM for complex off-chain computations while maintaining blockchain security. We integrated Avail as our data availability layer, using EIP-712 signing for secure data transfers. The authentication system leverages Dynamic SDK for both wallet and email-based logins, creating a seamless Web2/Web3 experience.
+Our six core applications are strategically integrated with leading protocols: degenSwap uses CoW DAO's SDK for MEV-protected trades, degenScout builds on Blockscout for multi-chain exploration, degenMetric utilizes The Graph for Uniswap analytics, degenShield implements custom risk scoring algorithms, degenSocial handles ENS lookups, and degenChef leverages Push Protocol for decentralized communication.
+The backend service, built with Node.js and TypeScript, manages data-intensive operations and coordinates between the Cartesi VM and integrated protocols. We implemented custom data bridges and compression techniques for efficient cross-layer communication, along with parallel processing and caching mechanisms for optimal performance. The system uses a notice/voucher architecture for verifiable computations and on-chain actions, ensuring security while maintaining efficiency.","['Cartesi-Build a dApp showcasing Avail integration2nd place', 'Blockscout-Blockscout Explorer Big Pool Prize', 'Avail-Best Cartesi x Avail integrated project1st place', 'The Graph-Best use of The Graph3rd place']"
+"https://ethglobal.com/showcase/keyboardwallet-8abdz","KeyboardWallet","ETHGlobal Bangkok","2025","We are integrating your wallet insinde of your keyboard to make payment as easy as sending an emoji","This project is designed to simplify the user experience of making digital payments by leveraging account abstraction, the capabilities of ERC-4337 (often called EIP-4337, which powers account abstraction), and the future ERC-7702 standards for payment sessions and automation. Here’s how it works in detail:
+1.	Account Setup and Funding:
+•	The user can deposit funds from any Layer 2 (L2) blockchain network using any supported currency, which will then be automatically swapped to USDC on the Base blockchain network. This simplifies the experience, as users don’t have to manage currency conversions manually or worry about switching networks.
+•	This auto-swap mechanism allows users to fund their account in a streamlined way, depositing in a familiar currency and having it converted to USDC in the background.
+2.	Session Key for Payments:
+•	Once the user has deposited funds into their account, they can generate a “sessionKey.” This session key is a temporary access key that enables secure, quick, and easy payments directly from a keyboard extension.
+•	During the hackathon prototype phase, this session key is hosted on a server to simplify interactions, allowing the keyboard to manage the signature of transactions through JavaScript. However, in the final production version, the session key will be managed on-device to enhance security, with signature handling at the native level on the device.
+3.	Keyboard Extension for Payments:
+•	The keyboard extension becomes a versatile payment tool with two main functions:
+•	Request: Allows the user to generate a payment request link directly from the keyboard. This feature is useful for receiving payments without leaving a messaging app or switching contexts.
+•	Send: Enables users to quickly initiate a payment, specifying the amount and using the session key to authenticate the transaction seamlessly.
+•	With the session key and on-device signature management, transactions can be completed smoothly within the messaging or app interface, making the payment experience as simple as sending a message.
+4.	User Experience Goals:
+•	Simplicity: By hiding the complexities of currency conversion, network switching, and cryptographic signing, users can have a familiar experience akin to traditional finance apps while using the advantages of blockchain.
+•	On-Device Security: In the final product, signatures are managed directly on the user’s device, ensuring that keys aren’t exposed externally and adding a layer of trust for users concerned about security.
+•	Seamless Integration: The keyboard acts as a gateway to digital transactions, enabling users to send or request funds anywhere they can type, such as in social media, messaging apps, or other communication tools.
+5.	Future Improvements and Standards:
+•	Leveraging ERC-7702 (a forthcoming standard), this project is preparing for automated payments and session-based account interactions, enabling the creation of secure, limited-use keys like the sessionKey. This is particularly useful for applications needing temporary access, such as for recurring payments or one-off transactions. In essence, the project makes sending and receiving money as easy as using your keyboard. Through account abstraction, automatic currency swapping, session keys, and secure on-device signature handling, it eliminates the technical friction typically associated with blockchain payments, offering a clean and user-friendly payment experience that can be used in any app where the keyboard is available.","N/A","https://github.com/GianlucaMinoprio/keyboard-wallet-ethglobal","By leveraging Zerodev for smart wallet management and combining web and native technologies, we achieved an integrated payment solution. Users can now make transactions directly from their keyboard, making digital payments feel as seamless as sending a message.","['Blockscout-Blockscout Explorer Big Pool Prize']"
+"https://ethglobal.com/showcase/nfcare-618ac","NFCare","ETHGlobal Bangkok","2025","NFCare: Bridging real-world help with blockchain. 🚀 Tap NFC, notify mentors, and earn on-chain Proof of Help. Verifiable reputation, seamless events, and a step closer to redefining consensus. 🌟 #NFCare #ProofOfHelp #BlockchainInnovation","NFCare is a seamless solution for managing and verifying real-world assistance at large-scale events like hackathons and conferences. By leveraging NFC technology and blockchain, NFCare streamlines the process of help requests and reputation tracking. Here's how it works: NFC Technology: Attendees use NFC tags or wristbands, which serve as their unique digital identities. When help is needed, users tap their NFC tag on a reader at their table, broadcasting their request. Help Notifications: The tapped NFC triggers an automated request, notifying mentors or helpers assigned to specific tables. Mentors receive real-time data such as the attendee’s name, seating location, and social handles (e.g., Telegram) to directly engage. Proof of Help: Once assistance is provided, attendees tap their mentor's NFC tag to rate their experience. This action generates a unique digital signature (Proof of Help), attested on-chain using the Sign Protocol, associating the request ID, signature, and Ethereum address. Reputation System: Ratings collected build a verifiable, immutable reputation score for mentors. These scores are stored on the blockchain, enabling event organizers to incentivize mentors based on their proven contributions. Consensus Redefined: NFCare introduces a new type of consensus — Proof of Help, which validates meaningful, real-world actions on the blockchain, moving beyond traditional energy-intensive models like Proof of Work.","N/A","https://github.com/adielliot37/ethglobal-BKK","N/A","['Blockscout-Blockscout Explorer Big Pool Prize']"
+"https://ethglobal.com/showcase/protostar-cw29m","ProtoStar","ETHGlobal Bangkok","2025","Protokit is a block explorer for developers building on Protokit app chain and MINA.","Protoscope is a specialized blockchain explorer designed specifically for developers building and maintaining Protokit app chains. It serves as a crucial development tool that provides deep insights into your app chain's state, transactions, and block production. Core Purpose:When building a Protokit app chain, developers need to understand what's happening under the hood – from state transitions to transaction execution. Protoscope makes this possible by providing: Development-First Features State Management Insights","N/A","https://github.com/satyambnsal/ProtoScope","Protoscope is built as a modular React-based explorer for Protokit blockchain networks, focusing on real-time data visualization and a seamless user experience. Here's a deep dive into its architecture and implementation: Core Technologies: Architecture & Implementation Details: Real-time Data Handling Search Implementation State Management Performance Optimizations UI/UX Considerations Notable Technical Achievements: Smart JSON Viewer Efficient State Transitions Display Search Optimization","['Mina Protocol-Best Mina application or library built using Protokit1st place']"
