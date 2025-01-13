@@ -55,7 +55,8 @@ erDiagram
     TEAM_MEMBER {
         int    user_id PK 
         int    team_id PK  
-        string role_in_team
+        string roles
+        int    role_id
         datetime joined_at
     }
 
@@ -118,6 +119,21 @@ erDiagram
         string sponsorship_level
     }
 
+    %% ------------------------------------------------------
+    %% JUDGES
+    %% ------------------------------------------------------
+    JUDGES {
+        int    user_id PK
+        string username
+        string email
+        string password_hash
+        string wallet_address
+        string first_name
+        string last_name
+        datetime created_at
+        datetime updated_at
+    }
+
 
     %% ------------------------------------------------------
     %% (Optional) RELATIONSHIPS
@@ -126,12 +142,14 @@ erDiagram
     %% For clarity, they are commented out here. If you wish to see
     %% relationships in the diagram, remove the "%%" at line beginnings.
 
-     ROLE ||--|{ USER : "has many"
      USER ||--|{ TEAM_MEMBER : "joins"
+     ROLE ||--|{ TEAM_MEMBER : "has"
+     USER ||--|{ JUDGES : "can be"
      TEAM ||--|{ TEAM_MEMBER : "has"
      HACKATHON ||--|{ TEAM : "includes"
      TEAM ||--|{ SUBMISSION : "makes"
      SUBMISSION ||--|{ SCORE : "is evaluated by"
+     JUDGES ||--|{ JUDGING_CRITERIA : "establishes"
      JUDGING_CRITERIA ||--|{ SCORE : "used by"
      USER ||--|{ SCORE : "assigns"
      SPONSOR ||--|{ HACKATHON_SPONSOR : "supports"
