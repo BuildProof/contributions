@@ -423,23 +423,46 @@ def scrape_all_events_data(events_csv: str, partners_output: str, prizes_output:
     return partners_df, prizes_df
 
 def main():
-    # Test prize scraping directly with a specific URL
-    test_url = "https://ethglobal.com/events/sanfrancisco2024"
+    # File paths
+    events_csv = 'results/ethglobal_events.csv'
     prizes_output = 'results/ethglobal_prizes.csv'
     
-    print(f"\nScraping prizes from: {test_url}")
-    _, prizes = scrape_partners_and_prizes(test_url)
+    # Check if events CSV exists
+    if not os.path.exists(events_csv):
+        print(f"Error: {events_csv} not found. Please run the event scraper first.")
+        return
     
-    if prizes:
-        prizes_df = pd.DataFrame(prizes)
+    # Read event URLs from CSV
+    print("Reading event URLs from CSV...")
+    events_df = pd.read_csv(events_csv)
+    event_urls = events_df['event_url'].tolist()
+    print(f"Found {len(event_urls)} events to process")
+    
+    # Scrape prizes from all events
+    print("\nScraping prizes from all events...")
+    all_prizes = []
+    
+    # Create progress bar
+    with tqdm(total=len(event_urls), desc="Scraping events") as pbar:
+        for event_url in event_urls:
+            print(f"\nProcessing event: {event_url}")
+            _, prizes = scrape_partners_and_prizes(event_url)
+            if prizes:
+                all_prizes.extend(prizes)
+                print(f"Added {len(prizes)} prizes from {event_url}")
+            pbar.update(1)
+    
+    # Save all prizes to CSV
+    if all_prizes:
+        os.makedirs('results', exist_ok=True)
+        prizes_df = pd.DataFrame(all_prizes)
         prizes_df.to_csv(prizes_output, index=False, quoting=csv.QUOTE_ALL)
-        print(f"Saved {len(prizes)} prizes to {prizes_output}")
+        print(f"\nSaved {len(all_prizes)} total prizes to {prizes_output}")
         
         # Print first prize for debugging
-        if len(prizes) > 0:
-            print("\nExample prize data:")
-            for key, value in prizes[0].items():
-                print(f"{key}: {value}")
+        print("\nExample prize data:")
+        for key, value in all_prizes[0].items():
+            print(f"{key}: {value}")
     else:
         print("No prizes found!")
 
