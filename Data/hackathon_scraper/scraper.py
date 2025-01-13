@@ -216,76 +216,232 @@ def scrape_all_projects(urls: list, output_file: str, max_workers: int = 20) -> 
 
 def get_hackathon_events(url: str = "https://ethglobal.com/events/hackathons") -> list:
     """
-    Scrape all past hackathon event URLs from the events page
-    
-    Args:
-        url: The events page URL
-        
-    Returns:
-        list: List of event URLs
+    Get all event URLs from the page without filtering
     """
     try:
         response = requests.get(url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Find the "Past" section and get all event links
-        event_urls = []
-        past_section = soup.find(text="Past")
+        # Get all links from the page
+        all_links = []
+        for link in soup.find_all('a', href=True):
+            print(link)
+            href = link['href']
+            if href.startswith('/events/'):  # Only get event links
+                full_url = f"https://ethglobal.com{href}"
+                if full_url not in all_links:  # Avoid duplicates
+                    all_links.append(full_url)
         
-        if past_section:
-            # Get all links after the "Past" section
-            for link in past_section.find_all_next('a', href=True):
-                href = link['href']
-                if href.startswith('/events/'):
-                    full_url = f"https://ethglobal.com{href}"
-                    event_urls.append(full_url)
-        
-        print(f"Found {len(event_urls)} past hackathon events")
-        return event_urls
+        print(f"Found {len(all_links)} total links")
+        for link in all_links:
+            print(f"Found: {link}")
+            
+        return all_links
         
     except requests.RequestException as e:
-        print(f"Error fetching events page: {e}")
+        print(f"Error fetching page: {e}")
         return []
 
-def main():
-    # Existing file names
-    project_urls_csv = 'results/project_urls.csv'
-    project_details_csv = 'results/ethglobal_project_details.csv'
-    events_csv = 'results/ethglobal_events.csv'  # New file for events
-    
-    # Create results directory if it doesn't exist
-    os.makedirs('results', exist_ok=True)
-    
-    # Clean up old files before starting
-    for file in [project_urls_csv, project_details_csv, events_csv]:
-        if os.path.exists(file):
+def extract_event_details(url: str) -> dict:
+    """Extract hackathon name, location, and year from event URL"""
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Get event title from the URL first (more reliable)
+        event_path = url.split('/')[-1]  # Get the last part of the URL
+        
+        # Clean up the event name
+        event_name = event_path.replace('-', ' ').title()
+        if 'ETH' not in event_name and 'Eth' not in event_name:
+            event_name = f"ETHGlobal {event_name}"
+        
+        # Extract location from event name
+        location = event_name
+        if 'ETHGlobal' in location:
+            location = location.replace('ETHGlobal', '').strip()
+        if 'ETH' in location:
+            location = location.replace('ETH', '').strip()
+        
+        # Find date information
+        date_text = ''
+        for text in soup.stripped_strings:
+            if any(month in text for month in ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']):
+                date_text = text
+                break
+        
+        # Extract year from date
+        year = 'N/A'
+        if date_text:
+            for word in date_text.split():
+                if word.isdigit() and len(word) == 4:
+                    year = word
+                    break
+        
+        # Clean up special cases
+        if location.lower() in ['online', 'virtual']:
+            event_name = f"ETH{event_name}"
+            location = 'Virtual'
+        
+        return {
+            'event_name': event_name,
+            'location': location,
+            'year': year
+        }
+    except Exception as e:
+        print(f"Error extracting event details from {url}: {e}")
+        return {'event_name': 'N/A', 'location': 'N/A', 'year': 'N/A'}
+
+def scrape_partners_and_prizes(event_url: str) -> tuple:
+    """Scrape partners and prize information for an event"""
+    try:
+        # Get the prizes page URL
+        prizes_url = f"{event_url}/prizes"
+        print(f"Fetching prizes from: {prizes_url}")
+        response = requests.get(prizes_url)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        prizes = []
+        
+        # Find all divs with border-b-2 class that contain prize information
+        prize_divs = soup.find_all('div', class_='border-b-2')
+        print(f"Found {len(prize_divs)} partner sections")
+        
+        for prize_div in prize_divs:
             try:
-                os.remove(file)
+                # Get partner name and total amount
+                h2_tag = prize_div.find('h2')
+                if not h2_tag:
+                    continue
+                    
+                partner_name = h2_tag.get_text(strip=True)
+                total_amount = prize_div.find('p', class_='text-2xl').get_text(strip=True)
+                
+                # Find all prize sections
+                prize_sections = prize_div.find_all('div', {'data-state': 'open', 'id': 'collapsible-data'})
+                
+                for section in prize_sections:
+                    # Find the prize header containing title
+                    prize_header = section.find('span', class_='text-xl font-semibold break-normal')
+                    if not prize_header:
+                        continue
+                        
+                    amount_span = section.find('span', class_='text-xl font-medium')
+                    if not amount_span:
+                        continue
+                    
+                    # Clean title by removing emoji
+                    title = prize_header.get_text(strip=True)
+                    title = ''.join(c for c in title if not (0x1F300 <= ord(c) <= 0x1F9FF))  # Remove emoji
+                    title = title.strip()
+                    amount = amount_span.get_text(strip=True)
+                    
+                    # Get description - look for the text div that comes after the prize breakdown
+                    breakdown_div = section.find('div', class_='group flex text-md')
+                    if breakdown_div:
+                        desc_div = breakdown_div.find_next_sibling('div', class_='text-lg mt-1.5 mb-2')
+                        description = desc_div.get_text(strip=True) if desc_div else 'N/A'
+                    else:
+                        description = 'N/A'
+                    
+                    # Get prize breakdown
+                    breakdowns = []
+                    breakdown_div = section.find('div', class_='flex flex-col lg:flex-row gap-y-2 gap-x-10')
+                    if breakdown_div:
+                        for place in breakdown_div.find_all('div', class_='flex gap-x-1'):
+                            place_info = place.find('div', class_='flex flex-col')
+                            if place_info:
+                                place_name = place_info.find('div', class_='w-fit').get_text(strip=True)
+                                amount_div = place_info.find('div', class_='text-gray-900')
+                                place_amount = amount_div.get_text(strip=True) if amount_div else 'N/A'
+                                breakdowns.append(f"{place_name}: {place_amount}")
+                    
+                    prizes.append({
+                        'event_url': event_url,
+                        'partner_name': partner_name,
+                        'total_partner_amount': total_amount,
+                        'prize_title': title,
+                        'prize_amount': amount,
+                        'description': description,
+                        'prize_breakdown': ' | '.join(breakdowns) if breakdowns else 'N/A'
+                    })
+                    
             except Exception as e:
-                print(f"Warning: Could not remove old file {file}: {e}")
+                print(f"Error processing partner section: {e}")
+                continue
+        
+        print(f"Found {len(prizes)} prizes")
+        return [], prizes
+        
+    except Exception as e:
+        print(f"Error scraping prizes from {event_url}: {e}")
+        return [], []
+
+def scrape_all_events_data(events_csv: str, partners_output: str, prizes_output: str) -> tuple:
+    """Scrape partners and prizes for all events"""
+    # Read events from CSV
+    events_df = pd.read_csv(events_csv)
+    all_partners = []
+    all_prizes = []
     
-    # Step 0: Get hackathon events (new step)
-    SCRAPE_EVENTS = True  # Toggle for event scraping
-    if SCRAPE_EVENTS:
-        event_urls = get_hackathon_events()
-        events_df = pd.DataFrame(event_urls, columns=['event_url'])
-        events_df.to_csv(events_csv, index=False)
-        print(f"Saved {len(event_urls)} event URLs to {events_csv}")
+    # Create progress bar
+    with tqdm(total=len(events_df), desc="Scraping events") as pbar:
+        for event_url in events_df['event_url']:
+            print(f"\nProcessing event: {event_url}")
+            partners, prizes = scrape_partners_and_prizes(event_url)
+            if partners:
+                all_partners.extend(partners)
+                print(f"Added {len(partners)} partners")
+            if prizes:
+                all_prizes.extend(prizes)
+                print(f"Added {len(prizes)} prizes")
+            pbar.update(1)
     
-    # Step 1: Scrape project URLs (only if needed)
-    SCRAPE_URLS = False  # Toggle this when you need to scrape new URLs
-    if SCRAPE_URLS:
-        event_name = "bangkok"
-        total_pages = 23
-        project_urls = generate_urls(event=event_name, total_pages=total_pages)
-        df_urls = scrape_event(project_urls, output_file=project_urls_csv)
+    print(f"\nTotal partners found: {len(all_partners)}")
+    print(f"Total prizes found: {len(all_prizes)}")
     
-    # Step 2: Scrape project details
-    SCRAPE_DETAILS = True  # Toggle this when you want to scrape project details
-    if SCRAPE_DETAILS:
-        urls = read_project_urls(csv_path=project_urls_csv)  # Read URLs from the CSV
-        df_details = scrape_all_projects(urls[0:30], output_file=project_details_csv)
+    # Convert to DataFrames and save
+    if all_partners:
+        partners_df = pd.DataFrame(all_partners)
+        partners_df.to_csv(partners_output, index=False, quoting=csv.QUOTE_ALL)
+        print(f"Saved partners to {partners_output}")
+    else:
+        print("Warning: No partners found!")
+        partners_df = pd.DataFrame()
+    
+    if all_prizes:
+        prizes_df = pd.DataFrame(all_prizes)
+        prizes_df.to_csv(prizes_output, index=False, quoting=csv.QUOTE_ALL)
+        print(f"Saved prizes to {prizes_output}")
+    else:
+        print("Warning: No prizes found!")
+        prizes_df = pd.DataFrame()
+    
+    return partners_df, prizes_df
+
+def main():
+    # Test prize scraping directly with a specific URL
+    test_url = "https://ethglobal.com/events/sanfrancisco2024"
+    prizes_output = 'results/ethglobal_prizes.csv'
+    
+    print(f"\nScraping prizes from: {test_url}")
+    _, prizes = scrape_partners_and_prizes(test_url)
+    
+    if prizes:
+        prizes_df = pd.DataFrame(prizes)
+        prizes_df.to_csv(prizes_output, index=False, quoting=csv.QUOTE_ALL)
+        print(f"Saved {len(prizes)} prizes to {prizes_output}")
+        
+        # Print first prize for debugging
+        if len(prizes) > 0:
+            print("\nExample prize data:")
+            for key, value in prizes[0].items():
+                print(f"{key}: {value}")
+    else:
+        print("No prizes found!")
 
 if __name__ == "__main__":
     main()
